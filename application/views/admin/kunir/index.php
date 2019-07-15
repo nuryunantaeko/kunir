@@ -4,8 +4,8 @@
 <div class="card shadow mb-4">
     <!-- Card Header - Dropdown -->
     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Data Kriteria</h6>
-        <a href="<?php echo base_url("admin/kriteria/create") ?>"
+        <h6 class="m-0 font-weight-bold text-primary">Data Kunir</h6>
+        <a href="<?php echo base_url("admin/kunir/create") ?>"
            class="btn btn-md btn-primary">Tambah Baru</a>
     </div>
     <!-- Card Body -->
@@ -15,22 +15,20 @@
             <thead>
             <tr>
                 <th style="width: 7%">No</th>
-                <th>Kriteria</th>
-                <th>Bobot</th>
+                <th>Kode Kunir</th>
                 <th style="width: 15%">Opsi</th>
             </tr>
             </thead>
             <tbody>
             <?php $no = 1;
-            foreach ($kriteria as $kriteria): ?>
+            foreach ($kunir as $kunir): ?>
                 <tr>
                     <td><?php echo $no ?></td>
-                    <td><?php echo $kriteria->nama_kriteria ?></td>
-                    <td><?php echo $kriteria->nilai_bobot ?></td>
+                    <td><?php echo $kunir->kode_kunir ?></td>
                     <td>
-                        <a href="<?php echo base_url("admin/kriteria/edit/$kriteria->id_kriteria") ?>"
+                        <a href="<?php echo base_url("admin/kunir/edit/$kunir->id_kunir") ?>"
                            class="btn btn-sm btn-warning">Edit</a>
-                        <a href="<?php echo base_url("admin/kriteria/delete/$kriteria->id_kriteria") ?>"
+                        <a href="<?php echo base_url("admin/kunir/delete/$kunir->id_kunir") ?>"
                            class="btn btn-sm btn-danger">Hapus</a>
                     </td>
                 </tr>

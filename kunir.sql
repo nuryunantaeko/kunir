@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- phpMyAdmin SQL Dump
 -- version 3.5.2.2
 -- http://www.phpmyadmin.net
@@ -9,6 +10,19 @@
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+=======
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4541
+#
+# http://www.sequelpro.com/
+# https://github.com/sequelpro/sequelpro
+#
+# Host: 127.0.0.1 (MySQL 5.5.5-10.1.38-MariaDB)
+# Database: kunir
+# Generation Time: 2019-07-15 17:29:43 +0000
+# ************************************************************
+>>>>>>> b76fee38d643363c6b7c89b445a67c2e527b9e22
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -78,8 +92,18 @@ CREATE TABLE IF NOT EXISTS `tabel_kriteria` (
 -- Table structure for table `tabel_kunir`
 --
 
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS `tabel_kunir` (
   `id_kunir` int(3) NOT NULL,
+=======
+# Dump of table tabel_kunir
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `tabel_kunir`;
+
+CREATE TABLE `tabel_kunir` (
+  `id_kunir` int(3) NOT NULL AUTO_INCREMENT,
+>>>>>>> b76fee38d643363c6b7c89b445a67c2e527b9e22
   `kode_kunir` varchar(5) NOT NULL,
   PRIMARY KEY (`id_kunir`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
