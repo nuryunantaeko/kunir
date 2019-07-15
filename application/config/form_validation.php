@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config = array(
-    'admin-kriteria' => array(
+    'admin-kriteria'   => array(
         array(
             'field'  => 'namaKriteria',
             'label'  => 'Nama kriteria',
@@ -21,6 +21,29 @@ $config = array(
                 'numeric'            => '%s hanya boleh angka.',
                 'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
                 'greater_than'       => '%s harus lebih dari 0'
+            ),
+        ),
+    ),
+    'admin-kunir'      => array(
+        array(
+            'field'  => 'kodeKunir',
+            'label'  => 'Kode kunir',
+            'rules'  => 'trim|required|alpha_numeric_spaces|is_unique[tabel_kunir.kode_kunir]',
+            'errors' => array(
+                'required'             => '%s harus di isi.',
+                'alpha_numeric_spaces' => '%s tidak boleh menggunakan karakter spesial.',
+                'is_unique'            => '%s sudah digunakan.'
+            ),
+        ),
+    ),
+    'admin-kunir-edit' => array(
+        array(
+            'field'  => 'kodeKunir',
+            'label'  => 'Kode kunir',
+            'rules'  => 'trim|required|alpha_numeric_spaces',
+            'errors' => array(
+                'required'             => '%s harus di isi.',
+                'alpha_numeric_spaces' => '%s tidak boleh menggunakan karakter spesial.',
             ),
         ),
     ),
