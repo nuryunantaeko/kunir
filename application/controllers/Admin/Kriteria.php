@@ -1,5 +1,8 @@
-<?php 
+<?php
 
+/**
+ * @property  template
+ */
 class Kriteria extends CI_Controller
 {
     public function __construct()
@@ -22,19 +25,26 @@ class Kriteria extends CI_Controller
     public function create()
     {
         if ($this->input->post()) {
-            # code...
-        }else{
-            $this->template->load('admin/kriteria/create');
+            if ($this->form_validation->run('admin-kriteria') === true) {
+                $this->model_admin_kriteria->create();
+                redirect('admin/kriteria');
+            }
         }
+
+        $this->template->load('admin/kriteria/create');
     }
 
     public function edit($id_kriteria)
     {
         if ($this->input->post()) {
-            # code...
-        }else{
-            $this->template->load('admin/kriteria/edit');
+            if ($this->form_validation->run('admin-kriteria') === true) {
+                $this->model_admin_kriteria->edit($id_kriteria);
+                redirect('admin/kriteria');
+            }
         }
+        $data['kriteria']
+            = $this->model_admin_kriteria->getKriteria($id_kriteria);
+        $this->template->load('admin/kriteria/edit', $data);
     }
 
     public function delete($id_kriteria)
