@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.1.38-MariaDB)
 # Database: kunir
-# Generation Time: 2019-07-15 18:51:59 +0000
+# Generation Time: 2019-07-15 18:57:27 +0000
 # ************************************************************
 
 
@@ -34,6 +34,15 @@ CREATE TABLE `tabel_admin` (
   PRIMARY KEY (`id_admin`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `tabel_admin` WRITE;
+/*!40000 ALTER TABLE `tabel_admin` DISABLE KEYS */;
+
+INSERT INTO `tabel_admin` (`id_admin`, `alamat`, `username`, `password`, `no_hp`)
+VALUES
+	(1,'sedayu, bantu;','admin','$2y$10$Znz9ZoRWOQeYE2hKqQdn/.1ofx0Fz5uP9kBjEfcb5DV.u25xa.sMe','0897863547');
+
+/*!40000 ALTER TABLE `tabel_admin` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table tabel_bobot
@@ -41,12 +50,19 @@ CREATE TABLE `tabel_admin` (
 
 DROP TABLE IF EXISTS `tabel_bobot`;
 
-CREATE TABLE `tabel_bobot` (
-  `id_bobot` int(3) NOT NULL AUTO_INCREMENT,
-  `nilai_bobot` float NOT NULL,
-  PRIMARY KEY (`id_bobot`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tabel_bobot` WRITE;
+/*!40000 ALTER TABLE `tabel_bobot` DISABLE KEYS */;
 
+INSERT INTO `tabel_bobot` (`id_bobot`, `nilai_bobot`)
+VALUES
+	(1,0.5),
+	(2,1),
+	(3,0.1),
+	(4,0.04),
+	(5,0.1);
+
+/*!40000 ALTER TABLE `tabel_bobot` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table tabel_bobot_kriteria
@@ -54,13 +70,16 @@ CREATE TABLE `tabel_bobot` (
 
 DROP TABLE IF EXISTS `tabel_bobot_kriteria`;
 
-CREATE TABLE `tabel_bobot_kriteria` (
-  `id_bobot_kriteria` int(3) NOT NULL AUTO_INCREMENT,
-  `id_kriteria` int(3) DEFAULT NULL,
-  `id_bobot` int(3) DEFAULT NULL,
-  PRIMARY KEY (`id_bobot_kriteria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tabel_bobot_kriteria` WRITE;
+/*!40000 ALTER TABLE `tabel_bobot_kriteria` DISABLE KEYS */;
 
+INSERT INTO `tabel_bobot_kriteria` (`id_bobot_kriteria`, `id_kriteria`, `id_bobot`)
+VALUES
+	(0,5,4),
+	(1,1,1);
+
+/*!40000 ALTER TABLE `tabel_bobot_kriteria` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table tabel_kriteria
@@ -68,12 +87,19 @@ CREATE TABLE `tabel_bobot_kriteria` (
 
 DROP TABLE IF EXISTS `tabel_kriteria`;
 
-CREATE TABLE `tabel_kriteria` (
-  `id_kriteria` int(3) NOT NULL AUTO_INCREMENT,
-  `nama_kriteria` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_kriteria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tabel_kriteria` WRITE;
+/*!40000 ALTER TABLE `tabel_kriteria` DISABLE KEYS */;
 
+INSERT INTO `tabel_kriteria` (`id_kriteria`, `nama_kriteria`)
+VALUES
+	(2,'ukuran'),
+	(3,'Cek cek'),
+	(4,'saya isi'),
+	(5,'222'),
+	(6,'contoh');
+
+/*!40000 ALTER TABLE `tabel_kriteria` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table tabel_kunir
@@ -81,12 +107,15 @@ CREATE TABLE `tabel_kriteria` (
 
 DROP TABLE IF EXISTS `tabel_kunir`;
 
-CREATE TABLE `tabel_kunir` (
-  `id_kunir` int(3) NOT NULL AUTO_INCREMENT,
-  `kode_kunir` varchar(5) NOT NULL,
-  PRIMARY KEY (`id_kunir`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tabel_kunir` WRITE;
+/*!40000 ALTER TABLE `tabel_kunir` DISABLE KEYS */;
 
+INSERT INTO `tabel_kunir` (`id_kunir`, `kode_kunir`)
+VALUES
+	(1,'A01');
+
+/*!40000 ALTER TABLE `tabel_kunir` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table tabel_nilai
@@ -94,19 +123,15 @@ CREATE TABLE `tabel_kunir` (
 
 DROP TABLE IF EXISTS `tabel_nilai`;
 
-CREATE TABLE `tabel_nilai` (
-  `id_nilai` int(3) NOT NULL AUTO_INCREMENT,
-  `c1` float NOT NULL DEFAULT '0',
-  `c2` float NOT NULL DEFAULT '0',
-  `c3` float NOT NULL DEFAULT '0',
-  `c4` float NOT NULL DEFAULT '0',
-  `c5` float NOT NULL DEFAULT '0',
-  `id_kunir` int(3) NOT NULL,
-  PRIMARY KEY (`id_nilai`),
-  KEY `id_kunir` (`id_kunir`),
-  CONSTRAINT `tabel_nilai_ibfk_1` FOREIGN KEY (`id_kunir`) REFERENCES `tabel_kunir` (`id_kunir`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tabel_nilai` WRITE;
+/*!40000 ALTER TABLE `tabel_nilai` DISABLE KEYS */;
 
+INSERT INTO `tabel_nilai` (`id_nilai`, `c1`, `c2`, `c3`, `c4`, `c5`, `id_kunir`)
+VALUES
+	(6,0.2,0.6,0.8,0.1,0.2,1);
+
+/*!40000 ALTER TABLE `tabel_nilai` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 
