@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.1.38-MariaDB)
 # Database: kunir
-# Generation Time: 2019-07-15 16:38:40 +0000
+# Generation Time: 2019-07-15 17:29:43 +0000
 # ************************************************************
 
 
@@ -82,7 +82,7 @@ CREATE TABLE `tabel_kriteria` (
 DROP TABLE IF EXISTS `tabel_kunir`;
 
 CREATE TABLE `tabel_kunir` (
-  `id_kunir` int(3) NOT NULL,
+  `id_kunir` int(3) NOT NULL AUTO_INCREMENT,
   `kode_kunir` varchar(5) NOT NULL,
   PRIMARY KEY (`id_kunir`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
