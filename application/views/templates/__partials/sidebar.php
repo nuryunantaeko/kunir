@@ -33,19 +33,20 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url() ?>admin/kriteria">
+            <a class="nav-link" href="<?php echo base_url('admin/kriteria') ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Data Kriteria</span></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url() ?>admin/kunir">
+            <a class="nav-link" href="<?php echo base_url('admin/kunir') ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Data Kunir</span></a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link"
+               href="<?php echo base_url("admin/penilaian") ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Penilaian</span></a>
         </li>
