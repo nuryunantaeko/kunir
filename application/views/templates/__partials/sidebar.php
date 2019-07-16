@@ -27,7 +27,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="<?php echo base_url('admin/hasil') ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Hasil Perhitungan</span></a>
         </li>

@@ -4,7 +4,8 @@ class MAuth extends CI_Model
 {
     public function login($username, $password)
     {
-        $passwordHash = $this->db->get_where('tabel_admin', array('username' => $username))->row();
+        $passwordHash = $this->db->get_where('tabel_admin',
+            array('username' => $username))->row();
         $login = password_verify('password', $passwordHash->password);
 
         if ($login) {
