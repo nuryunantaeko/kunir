@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2019 at 06:06 PM
+-- Generation Time: Jul 16, 2019 at 06:18 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -133,14 +133,23 @@ CREATE TABLE IF NOT EXISTS `tabel_kunir` (
   `id_kunir` int(3) NOT NULL AUTO_INCREMENT,
   `kode_kunir` varchar(5) NOT NULL,
   PRIMARY KEY (`id_kunir`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `tabel_kunir`
 --
 
 INSERT INTO `tabel_kunir` (`id_kunir`, `kode_kunir`) VALUES
-(1, 'A01');
+(1, 'A01'),
+(2, 'A02'),
+(3, 'A03'),
+(4, 'A04'),
+(5, 'A05'),
+(6, 'A06'),
+(7, 'A07'),
+(8, 'A08'),
+(9, 'A09'),
+(10, 'A10');
 
 -- --------------------------------------------------------
 
@@ -158,14 +167,23 @@ CREATE TABLE IF NOT EXISTS `tabel_nilai` (
   `id_kunir` int(3) NOT NULL,
   PRIMARY KEY (`id_nilai`),
   KEY `id_kunir` (`id_kunir`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `tabel_nilai`
 --
 
 INSERT INTO `tabel_nilai` (`id_nilai`, `c1`, `c2`, `c3`, `c4`, `c5`, `id_kunir`) VALUES
-(6, 0.2, 0.6, 0.8, 0.1, 0.2, 1);
+(6, 0.2, 0.6, 0.8, 0.1, 0.2, 1),
+(7, 78, 56, 56, 89, 78, 2),
+(8, 87, 78, 45, 90, 34, 3),
+(9, 45, 67, 86, 67, 45, 4),
+(10, 78, 76, 45, 76, 98, 5),
+(11, 67, 98, 67, 98, 56, 6),
+(12, 78, 68, 98, 46, 89, 7),
+(13, 67, 45, 56, 89, 47, 8),
+(14, 78, 67, 99, 56, 89, 9),
+(15, 78, 67, 89, 76, 89, 10);
 
 --
 -- Constraints for dumped tables
