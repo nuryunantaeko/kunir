@@ -13,6 +13,7 @@ class MHasil extends CI_Model
         foreach ($this->getAllMatriksTerbobot() as $key => $terbobot) {
             $rangking[$key] = array_sum($terbobot);
         }
+        arsort($rangking);
 
         return (object)$rangking;
     }

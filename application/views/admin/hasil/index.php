@@ -252,7 +252,7 @@
       'ordering': true,
       'info': false,
       'searching': false,
-      'order': [[2, 'desc']],
+      // 'order': [[2, 'desc']],
     });
   });
 </script>
