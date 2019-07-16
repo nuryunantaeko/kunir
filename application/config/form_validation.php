@@ -51,7 +51,7 @@ $config = array(
         array(
             'field'  => 'aromaRimpang',
             'label'  => 'Aroma rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
@@ -62,7 +62,7 @@ $config = array(
         array(
             'field'  => 'kondisiRimpang',
             'label'  => 'Kondisi rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
@@ -73,7 +73,7 @@ $config = array(
         array(
             'field'  => 'warnaRimpang',
             'label'  => 'Warna rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
@@ -84,7 +84,7 @@ $config = array(
         array(
             'field'  => 'seranggaHidup',
             'label'  => 'Serangga hidup',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
@@ -95,7 +95,7 @@ $config = array(
         array(
             'field'  => 'ukuran',
             'label'  => 'Ukuran',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
