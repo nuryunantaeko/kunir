@@ -54,38 +54,34 @@
                         <?php if (empty($penilaian->c3)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
                         <?php elseif ($penilaian->c3 < 0.333): ?>
-                            <span class="badge badge-danger">Busuk</span>
+                            <span class="badge badge-danger">Kecoklatan</span>
                         <?php elseif ($penilaian->c3 > 0.333
                             && $penilaian->c3 < 0.666
                         ): ?>
-                            <span class="badge badge-warning">Layu</span>
+                            <span class="badge badge-warning">Kuning Tua</span>
                         <?php else: ?>
-                            <span class="badge badge-success">Segar</span>
+                            <span class="badge badge-success">Kuning Muda</span>
                         <?php endif; ?></td>
                     <td>
                         <?php if (empty($penilaian->c4)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c4 < 0.333): ?>
-                            <span class="badge badge-danger">Busuk</span>
-                        <?php elseif ($penilaian->c4 > 0.333
-                            && $penilaian->c4 < 0.666
-                        ): ?>
-                            <span class="badge badge-warning">Layu</span>
+                        <?php elseif ($penilaian->c4 > 0.5): ?>
+                            <span class="badge badge-warning">Ada</span>
                         <?php else: ?>
-                            <span class="badge badge-success">Segar</span>
+                            <span class="badge badge-success">Tidak Ada</span>
                         <?php endif; ?>
                     </td>
                     <td>
                         <?php if (empty($penilaian->c5)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
                         <?php elseif ($penilaian->c5 < 0.333): ?>
-                            <span class="badge badge-danger">Busuk</span>
+                            <span class="badge badge-danger">Kecil</span>
                         <?php elseif ($penilaian->c5 > 0.333
                             && $penilaian->c5 < 0.666
                         ): ?>
-                            <span class="badge badge-warning">Layu</span>
+                            <span class="badge badge-warning">Sedang</span>
                         <?php else: ?>
-                            <span class="badge badge-success">Segar</span>
+                            <span class="badge badge-success">Besar</span>
                         <?php endif; ?>
                     </td>
                     <td>
