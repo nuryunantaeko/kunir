@@ -21,7 +21,7 @@
                 Rimpang</label>
             <input class="form-control <?php echo form_error('aromaRimpang')
                 ? 'is-invalid' : '' ?>" id="aromaRimpang" type="number"
-                   min="1" max="10" step="1"
+                   min="1" max="5" step="1"
                    placeholder="0" name="aromaRimpang"
                    value="<?php echo $penilaian->c1 ? $penilaian->c1
                        : set_value('aromaRimpang') ?>">
@@ -33,7 +33,7 @@
                 Rimpang</label>
             <input class="form-control <?php echo form_error('kondisiRimpang')
                 ? 'is-invalid' : '' ?>" id="kondisiRimpang" type="number"
-                   min="1" max="10" step="1"
+                   min="1" max="5" step="1"
                    placeholder="0" name="kondisiRimpang"
                    value="<?php echo $penilaian->c2 ? $penilaian->c2
                        : set_value('kondisiRimpang') ?>">
@@ -45,7 +45,7 @@
                 Rimpang</label>
             <input class="form-control <?php echo form_error('warnaRimpang')
                 ? 'is-invalid' : '' ?>" id="warnaRimpang" type="number"
-                   min="1" max="10" step="1"
+                   min="1" max="5" step="1"
                    placeholder="0" name="warnaRimpang"
                    value="<?php echo $penilaian->c3 ? $penilaian->c3
                        : set_value('warnaRimpang') ?>">
@@ -56,7 +56,7 @@
                 Hidup</label>
             <input class="form-control <?php echo form_error('seranggaHidup')
                 ? 'is-invalid' : '' ?>" id="seranggaHidup" type="number"
-                   min="1" max="10" step="1"
+                   min="1" max="5" step="1"
                    placeholder="0" name="seranggaHidup"
                    value="<?php echo $penilaian->c4 ? $penilaian->c4
                        : set_value('seranggaHidup') ?>">
@@ -66,7 +66,7 @@
             <label class="col-form-label" for="ukuran">Ukuran</label>
             <input class="form-control <?php echo form_error('ukuran')
                 ? 'is-invalid' : '' ?>" id="ukuran" type="number"
-                   min="1" max="10" step="1"
+                   min="1" max="5" step="1"
                    placeholder="0" name="ukuran"
                    value="<?php echo $penilaian->c5 ? $penilaian->c1
                        : set_value('ukuran') ?>">
