@@ -34,8 +34,8 @@ class MHasil extends CI_Model
             $this->getAllMatriksNormalisasi() as $kode => $matriksNormalisasi
         ) {
             foreach ($matriksNormalisasi as $key => $normal) {
-                $terbobot[$key] = round($normal / $bobot[$key], 5);
-                $matriksTerbobot[$kode] = $terbobot;
+               $terbobot[$key] = round($normal * $bobot[$key], 5);
+                $matriksTerbobot[$kode] = $terbobot; 
             }
         }
         return (object)$matriksTerbobot;

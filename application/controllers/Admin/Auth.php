@@ -30,5 +30,6 @@ class Auth extends CI_Controller
     public function logout()
     {
         $this->model_auth->logout();
+        redirect('/');
     }
 }

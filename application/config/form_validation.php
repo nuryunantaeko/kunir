@@ -15,11 +15,11 @@ $config = array(
         array(
             'field'  => 'bobotKriteria',
             'label'  => 'Bobot kriteria',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[1]|greater_than[0]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[5]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 5 atau sama dengan 5',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),
@@ -51,55 +51,55 @@ $config = array(
         array(
             'field'  => 'aromaRimpang',
             'label'  => 'Aroma rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[10]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 10 atau sama dengan 10',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),
         array(
             'field'  => 'kondisiRimpang',
             'label'  => 'Kondisi rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[10]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 10 atau sama dengan 10',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),
         array(
             'field'  => 'warnaRimpang',
             'label'  => 'Warna rimpang',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[10]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 10 atau sama dengan 10',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),
         array(
             'field'  => 'seranggaHidup',
             'label'  => 'Serangga hidup',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[10]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 10 atau sama dengan 10',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),
         array(
             'field'  => 'ukuran',
             'label'  => 'Ukuran',
-            'rules'  => 'trim|required|numeric|less_than_equal_to[100]|greater_than[1]',
+            'rules'  => 'trim|required|numeric|less_than_equal_to[10]|greater_than[0]',
             'errors' => array(
                 'required'           => '%s harus di isi.',
                 'numeric'            => '%s hanya boleh angka.',
-                'less_than_equal_to' => '%s harus kurang dari 1 atau sama dengan 1',
+                'less_than_equal_to' => '%s harus kurang dari 10 atau sama dengan 10',
                 'greater_than'       => '%s harus lebih dari 0'
             ),
         ),

@@ -31,7 +31,7 @@
                     <td>
                         <?php if (empty($penilaian->c1)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c1 > 50): ?>
+                        <?php elseif ($penilaian->c1 >5): ?>
                             <span class="badge badge-warning">Berbau</span>
                         <?php else: ?>
                             <span class="badge badge-success">Tidak Berbau</span>
@@ -40,10 +40,10 @@
                     <td>
                         <?php if (empty($penilaian->c2)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c2 < 33): ?>
+                        <?php elseif ($penilaian->c2 < 3): ?>
                             <span class="badge badge-danger">Busuk</span>
-                        <?php elseif ($penilaian->c2 > 33
-                            && $penilaian->c2 < 66
+                        <?php elseif ($penilaian->c2 >= 3
+                            && $penilaian->c2 < 6
                         ): ?>
                             <span class="badge badge-warning">Layu</span>
                         <?php else: ?>
@@ -53,10 +53,10 @@
                     <td>
                         <?php if (empty($penilaian->c3)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c3 < 33): ?>
+                        <?php elseif ($penilaian->c3 < 3): ?>
                             <span class="badge badge-danger">Kecoklatan</span>
-                        <?php elseif ($penilaian->c3 > 33
-                            && $penilaian->c3 < 66
+                        <?php elseif ($penilaian->c3 >= 3
+                            && $penilaian->c3 < 6
                         ): ?>
                             <span class="badge badge-warning">Kuning Tua</span>
                         <?php else: ?>
@@ -65,7 +65,7 @@
                     <td>
                         <?php if (empty($penilaian->c4)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c4 > 50): ?>
+                        <?php elseif ($penilaian->c4 <=5): ?>
                             <span class="badge badge-warning">Ada</span>
                         <?php else: ?>
                             <span class="badge badge-success">Tidak Ada</span>
@@ -74,10 +74,10 @@
                     <td>
                         <?php if (empty($penilaian->c5)): ?>
                             <span class="badge badge-danger">Belum di isi</span>
-                        <?php elseif ($penilaian->c5 < 33): ?>
+                        <?php elseif ($penilaian->c5 < 3): ?>
                             <span class="badge badge-danger">Kecil</span>
-                        <?php elseif ($penilaian->c5 > 33
-                            && $penilaian->c5 < 66
+                        <?php elseif ($penilaian->c5 >=3
+                            && $penilaian->c5 < 6
                         ): ?>
                             <span class="badge badge-warning">Sedang</span>
                         <?php else: ?>

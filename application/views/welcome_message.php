@@ -1,1 +1,3 @@
-<h1>hai</h1>
+<center> <h1>SELAMAT DATANG DI</h1> <br>
+ <h1>SISTEM PENDUKUNG KEPUTUSAN PEMILIHAN KUNIR PUTIH BERKUALITAS</h1><br>
+<h1>CV. WINDRA MEKAR</h1> <br> </center>
