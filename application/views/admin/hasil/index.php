@@ -43,7 +43,7 @@
                cellspacing="0">
             <thead>
             <tr>
-                <th style="width: 7%">Alternatif/Kriteria</th>
+                <th style="width: 7%">Alternatif</th>
                 <?php foreach (
                     $matriksAlternatifKriteria->kriteria as $kriteria
                 ): ?>
@@ -117,7 +117,7 @@
                cellspacing="0">
             <thead>
             <tr>
-                <th style="width: 7%">Alternatif/Kriteria</th>
+                <th style="width: 7%">Alternatif</th>
                 <?php foreach (
                     $matriksAlternatifKriteria->kriteria as $kriteria
                 ): ?>
@@ -155,7 +155,7 @@
                cellspacing="0">
             <thead>
             <tr>
-                <th style="width: 7%">Alternatif/Kriteria</th>
+                <th style="width: 7%">Alternatif</th>
                 <?php foreach (
                     $matriksAlternatifKriteria->kriteria as $kriteria
                 ): ?>
@@ -185,7 +185,7 @@
 <div class="card shadow mb-4">
     <!-- Card Header - Dropdown -->
     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Matrix Terbobot</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Hasil Akhir Perangkingan</h6>
     </div>
     <!-- Card Body -->
     <div class="card-body">
@@ -194,7 +194,7 @@
             <thead>
             <tr>
                 <th style="width: 7%">No</th>
-                <th style="width: 7%">Alternatif/Kriteria</th>
+                <th style="width: 7%">Alternatif</th>
                 <th>Hasil Akhir</th>
             </tr>
             </thead>
