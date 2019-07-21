@@ -2,6 +2,62 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config = array(
+    'admin-tambah-baru'   => array(
+        array(
+            'field'  => 'username',
+            'label'  => 'Username',
+            'rules'  => 'trim|required|alpha_numeric_spaces',
+            'errors' => array(
+                'required'             => '%s harus di isi.',
+                'alpha_numeric_spaces' => '%s tidak boleh menggunakan karakter spesial.'
+            ),
+        ),
+        array(
+            'field'  => 'password',
+            'label'  => 'Password',
+            'rules'  => 'trim|required|min_length[5]',
+            'errors' => array(
+                'required'           => '%s harus di isi.',
+                'min_length'       => '%s harus lebih dari 5'
+            ),
+        ),
+        array(
+            'field'  => 'alamat',
+            'label'  => 'Alamat',
+            'rules'  => 'trim|required',
+            'errors' => array(
+                'required'           => '%s harus di isi.',
+            ),
+        ),
+        array(
+            'field'  => 'noHp',
+            'label'  => 'No. Hp',
+            'rules'  => 'trim|required|numeric',
+            'errors' => array(
+                'required'           => '%s harus di isi.',
+                'numeric'            => '%s hanya boleh angka.',
+            ),
+        ),
+    ),
+    'admin-edit-user'   => array(
+        array(
+            'field'  => 'alamat',
+            'label'  => 'Alamat',
+            'rules'  => 'trim|required',
+            'errors' => array(
+                'required'           => '%s harus di isi.',
+            ),
+        ),
+        array(
+            'field'  => 'noHp',
+            'label'  => 'No. Hp',
+            'rules'  => 'trim|required|numeric',
+            'errors' => array(
+                'required'           => '%s harus di isi.',
+                'numeric'            => '%s hanya boleh angka.',
+            ),
+        ),
+    ),
     'admin-kriteria'   => array(
         array(
             'field'  => 'namaKriteria',

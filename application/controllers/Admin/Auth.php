@@ -32,4 +32,40 @@ class Auth extends CI_Controller
         $this->model_auth->logout();
         redirect('/');
     }
+
+    public function users()
+    {
+        $data['users'] = $this->model_auth->getAllUsers();
+        $this->template->load('admin/auth/index', $data);
+    }
+
+    public function create_user()
+    {
+        if ($this->input->post()) {
+            if ($this->form_validation->run('admin-tambah-baru') === true) {
+                $this->model_auth->create();
+                redirect('admin/auth/users');
+            }
+        }
+
+        $this->template->load('admin/auth/create');
+    }
+    public function edit_user($id_user)
+    {
+        if ($this->input->post()) {
+            if ($this->form_validation->run('admin-edit-user') === true) {
+                $this->model_auth->edit($id_user);
+                redirect('admin/auth/users');
+            }
+        }
+        
+        $data['user'] = $this->model_auth->getUser($id_user);
+        $this->template->load('admin/auth/edit', $data);
+    }
+
+    public function delete_user($id_user)
+    {
+        $this->model_auth->delete($id_user);
+        redirect('admin/auth/users');
+    }
 }

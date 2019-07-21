@@ -52,6 +52,14 @@
         </li>
 
         <hr class="sidebar-divider my-0">
-
+        <?php $login = $this->session->userdata('login');
+            if ($login): ?>
+            <li class="nav-item">
+                <a class="nav-link"
+                href="<?php echo base_url("admin/auth/users") ?>">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Daftar Administrator</span></a>
+            </li>
+        <?php endif; ?>
     </ul>
     <!-- End of Sidebar -->
